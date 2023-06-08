@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <link rel="stylesheet" href="formstyle.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sign Up Form</title>
+</head>
+
+<body>
+ <section role="form">
+  <div class="outerbox">
+   <div class="innerbox">
+    <header class="signup-header">
+     <h1>SignUp</h1>
+     <p>It just takes a while to create an account.</p>
+    </header>
+    <main class="signup-main">
+     <form action="#">
+      <p><label for="fullname">Full Name:</label>
+       <input type="text" name="fullname" id="fullname" placeholder="Dev Pathak" autocomplete="off" required
+        autofocus="on">
+      </p>
+
+      <p><label for="email">Your Email:</label>
+       <input type="email" name="email" id="email" placeholder="info@xyz.com" autocomplete="off" required>
+      </p>
+
+      <p><label for="password">Your New Password:</label>
+       <input type="password" name="password" id="password" autocomplete="off" required
+        placeholder="Atleast 8 characters with 1 special character">
+      </p>
+
+      <p class="buttons">
+       <input type="submit" name="submit" id="submit-btn" value="Create Account">
+       <input type="reset" name="reset" id="reset-btn" value="Reset">
+      </p>
+     </form>
+    </main>
+    <footer>
+     <p>Already Have An Account ? <a href="#">Login</a></p>
+    </footer>
+   </div>
+   <div class="c1"></div>
+   <div class="c2"></div>
+  </div>
+ </section>
+</body>
+
+</html>
