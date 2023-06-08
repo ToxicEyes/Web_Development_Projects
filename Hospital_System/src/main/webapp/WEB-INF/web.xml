@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Hospital_System</display-name>
+  <servlet>
+  	<servlet-name>UserRegister</servlet-name>
+  	<servlet-class>com.user.entity.UserRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserRegister</servlet-name>
+  	<url-pattern>/UserRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<servlet-class>com.servlet.AdminLogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<url-pattern>/adminLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminLogout</servlet-name>
+  	<servlet-class>com.servlet.AdminLogout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AdminLogout</servlet-name>
+  	<url-pattern>/AdminLogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserLogin</servlet-name>
+  	<servlet-class>com.user.entity.UserLogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserLogin</servlet-name>
+  	<url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserLogout</servlet-name>
+  	<servlet-class>com.user.entity.UserLogout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserLogout</servlet-name>
+  	<url-pattern>/UserLogout</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+	<servlet-name>addDoc</servlet-name>
+	<servlet-class>com.servlet.AddDoctor</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>addDoc</servlet-name>
+	<url-pattern>/AddDoctor</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>DoctorLogin</servlet-name>
+	<servlet-class>com.doctor.servlet.doctor_login</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoctorLogin</servlet-name>
+	<url-pattern>/doctorLogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  	<servlet-name>DoctorLogout</servlet-name>
+  	<servlet-class>com.doctor.servlet.Doctor_logout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DoctorLogout</servlet-name>
+  	<url-pattern>/doctorLogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddAppointment</servlet-name>
+  	<servlet-class>com.user.entity.AppointmentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddAppointment</servlet-name>
+  	<url-pattern>/addAppointment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateStatus</servlet-name>
+  	<servlet-class>com.doctor.servlet.UpdateStatus</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateStatus</servlet-name>
+  	<url-pattern>/updateStatus</url-pattern>
+  </servlet-mapping>
+</web-app>
